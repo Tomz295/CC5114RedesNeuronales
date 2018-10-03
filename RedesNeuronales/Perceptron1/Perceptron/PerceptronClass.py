@@ -1,8 +1,14 @@
 class perceptron:
-    def __init__(self, weights, biass):
+    # Construnctor perceptron
+    # weights -> list[] de pesos de cada entrada
+    # biass -> bias del perceptron
+    def __init__(self, weights, biass, learnRate = 0.1):
         self.weight = weights
         self.bias = biass
+        self.lr = learnRate
 
+    # Recibe una list[] de entradas y entrega la salida booleana correspondiente
+    # return -> bool
     def feed(self, inputs):
         assert len(inputs) == len(self.weight)
         suma = 0
@@ -10,6 +16,17 @@ class perceptron:
             suma += inputs[a] * self.weight[a]
         suma += self.bias
         return suma > 0
+
+    # Entrena el perceptron a partir de una lista de inputs y el output booleano esperado
+    # inputs -> list[] de inputs
+    # expectedOutput -> bool del output esperado
+    def train(self, inputs, expectedOutput):
+        realOut = self.feed(inputs)
+        difference = int(expectedOutput - realOut)
+        for n in range(len(inputs)):
+            oldweight = self.weight[n]
+            self.weight[n] = oldweight + (self.lr * inputs[n] * difference)
+        bias = bias * (self.lr * difference)
 
 
 class AND(perceptron):
