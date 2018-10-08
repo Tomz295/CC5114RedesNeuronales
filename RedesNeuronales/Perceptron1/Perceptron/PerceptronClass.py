@@ -26,7 +26,7 @@ class perceptron:
         for n in range(len(inputs)):
             oldweight = self.weight[n]
             self.weight[n] = oldweight + (self.lr * inputs[n] * difference)
-        self.bias = self.bias * (self.lr * difference)
+        self.bias = self.bias + (self.lr * difference)
 
 
 class AND(perceptron):

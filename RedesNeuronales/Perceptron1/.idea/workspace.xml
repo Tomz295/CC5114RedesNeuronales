@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44bd1664-182e-47fb-89d8-ed89ab1d1289" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Perceptron/AbsPerceptronTrain.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Perceptron/PerceptXORTraining.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sigmoid/SigmoidClass.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sigmoid/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Perceptron/PerceptGraphTraining.py" beforeDir="false" afterPath="$PROJECT_DIR$/Perceptron/PerceptGraphTraining.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Perceptron/PerceptronClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/Perceptron/PerceptronClass.py" afterDir="false" />
@@ -49,35 +53,39 @@
     <session id="1571406990">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.122" value="1" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.39" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="2" />
+          <entry key="py" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="2" />
+          <entry key="Python" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="PerceptGraphTraining" value="77" />
+          <entry key="PerceptGraphTraining" value="411" />
+          <entry key="PerceptXORTraining" value="68" />
           <entry key="Python Console" value="47" />
-          <entry key="py" value="2407" />
+          <entry key="dummy" value="13" />
+          <entry key="py" value="3373" />
           <entry key="txt" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Python" value="2531" />
+          <entry key="PLAIN_TEXT" value="19" />
+          <entry key="Python" value="3899" />
         </counts>
       </usages-collector>
     </session>
@@ -87,8 +95,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Perceptron/PerceptronClass.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="26" column="38" lean-forward="true" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+            <state relative-caret-position="-267">
+              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sigmoid/SigmoidClass.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+                <marker date="1539031830332" expanded="true" signature="90:91" ph="..." />
+                <marker date="1539031830332" expanded="true" signature="90:92" ph="..." />
+                <marker date="1539031830332" expanded="true" signature="90:96" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,12 +119,25 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Perceptron/PerceptGraphTraining.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="243">
+              <caret line="27" column="44" lean-forward="true" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
-                <marker date="1538614525384" expanded="true" signature="702:867" ph="..." />
-                <marker date="1538614525384" expanded="true" signature="805:867" ph="..." />
+                <marker date="1539031026812" expanded="true" signature="713:965" ph="..." />
+                <marker date="1539031026812" expanded="true" signature="816:965" ph="..." />
+                <marker date="1539031026812" expanded="true" signature="902:965" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Perceptron/PerceptXORTraining.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -129,8 +165,11 @@
         <option value="$PROJECT_DIR$/Tests/__init__.py" />
         <option value="$PROJECT_DIR$/Tests/Percept_Tests.py" />
         <option value="$PROJECT_DIR$/Perceptron/PercepTraining.py" />
-        <option value="$PROJECT_DIR$/Perceptron/PerceptGraphTraining.py" />
         <option value="$PROJECT_DIR$/Perceptron/PerceptronClass.py" />
+        <option value="$PROJECT_DIR$/Perceptron/PerceptXORTraining.py" />
+        <option value="$PROJECT_DIR$/Perceptron/AbsPerceptronTrain.py" />
+        <option value="$PROJECT_DIR$/Perceptron/PerceptGraphTraining.py" />
+        <option value="$PROJECT_DIR$/Sigmoid/SigmoidClass.py" />
       </list>
     </option>
   </component>
@@ -160,6 +199,11 @@
               <item name="Perceptron1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Perceptron1" type="462c0819:PsiDirectoryNode" />
               <item name="Perceptron" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Perceptron1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Perceptron1" type="462c0819:PsiDirectoryNode" />
+              <item name="Sigmoid" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Perceptron1" type="b2602c69:ProjectViewProjectNode" />
@@ -207,6 +251,24 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="PerceptXORTraining" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Perceptron11" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Perceptron" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Perceptron/PerceptXORTraining.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Perceptron" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Perceptron11" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -246,14 +308,15 @@
       <item itemvalue="Python.Perceptron" />
       <item itemvalue="Python tests.Unittests for Percept_Tests.MyTestCase" />
       <item itemvalue="Python.PerceptGraphTraining" />
+      <item itemvalue="Python.PerceptXORTraining" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.PerceptGraphTraining" />
         <item itemvalue="Python.PerceptGraphTraining" />
         <item itemvalue="Python.PerceptGraphTraining" />
-        <item itemvalue="Python tests.Unittests for Percept_Tests.MyTestCase" />
-        <item itemvalue="Python.Perceptron" />
+        <item itemvalue="Python.PerceptXORTraining" />
+        <item itemvalue="Python.PerceptXORTraining" />
       </list>
     </recent_temporary>
   </component>
@@ -275,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538599740229</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="clase3">
+      <created>1538615265427</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1538615265427</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -288,12 +358,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24255952" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24255952" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32872504" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.30107528" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -302,7 +373,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32872504" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="10" visible="true" weight="0.32872504" />
+      <window_info anchor="bottom" id="Python Console" order="10" visible="true" weight="0.32872504" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -323,21 +394,48 @@
     <entry file="file://$PROJECT_DIR$/Tests/__init__.py" />
     <entry file="file://$PROJECT_DIR$/Tests/Percept_Tests.py" />
     <entry file="file://$PROJECT_DIR$/Perceptron/PercepTraining.py" />
+    <entry file="file://$PROJECT_DIR$/Perceptron/AbsPerceptronTrain.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Perceptron/PerceptXORTraining.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sigmoid/SigmoidClass.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+            <marker date="1539031830332" expanded="true" signature="90:91" ph="..." />
+            <marker date="1539031830332" expanded="true" signature="90:92" ph="..." />
+            <marker date="1539031830332" expanded="true" signature="90:96" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Perceptron/PerceptronClass.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="26" column="38" lean-forward="true" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+        <state relative-caret-position="-267">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Perceptron/PerceptGraphTraining.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="243">
+          <caret line="27" column="44" lean-forward="true" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-            <marker date="1538614525384" expanded="true" signature="702:867" ph="..." />
-            <marker date="1538614525384" expanded="true" signature="805:867" ph="..." />
+            <marker date="1539031026812" expanded="true" signature="713:965" ph="..." />
+            <marker date="1539031026812" expanded="true" signature="816:965" ph="..." />
+            <marker date="1539031026812" expanded="true" signature="902:965" ph="..." />
           </folding>
         </state>
       </provider>
