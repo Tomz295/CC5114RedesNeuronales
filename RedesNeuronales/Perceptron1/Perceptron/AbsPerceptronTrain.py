@@ -28,7 +28,7 @@ class GenericPerceptronTraining(ABC):
             expectedOutput = self.trueValue(randCoords)
             self.neuron.train(randCoords, expectedOutput)
 
-    def learningCurve(self, TrainsPerPoint = 100, XPoints = 20):
+    def learningCurve(self, threshold = 0.0, TrainsPerPoint = 100, XPoints = 20):
         self.newRadomNeuron()
         plt.grid(True)
         Yaxis = []
@@ -43,7 +43,8 @@ class GenericPerceptronTraining(ABC):
             Yvalue = 0
             for n in range(500):
                 perceptOutput = self.neuron.feed(randCoords[n])
-                Yvalue += int(perceptOutput == expectedOutput[n])
+                diff = expectedOutput[n] - perceptOutput
+                Yvalue += int(abs(diff) <= threshold)
             Yaxis.append(Yvalue/500.0)
             Xaxis.append(TrainsPerPoint * i)
             self.trainNeuron(TrainsPerPoint)

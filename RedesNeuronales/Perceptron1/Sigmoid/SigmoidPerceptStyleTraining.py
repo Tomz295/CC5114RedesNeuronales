@@ -40,3 +40,6 @@ class SigmoidNANDTraining(SigmoidBasicTraining):
 
     def trueValue(self, inputs):
         return not (inputs[0] and inputs[1])
+
+sand = SigmoidNANDTraining()
+sand.learningCurve(0.5)

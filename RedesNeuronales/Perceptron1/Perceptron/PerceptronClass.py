@@ -22,7 +22,7 @@ class perceptron:
     # expectedOutput -> bool del output esperado
     def train(self, inputs, expectedOutput):
         realOut = self.feed(inputs)
-        difference = int(expectedOutput - realOut)
+        difference = expectedOutput - realOut
         for n in range(len(inputs)):
             oldweight = self.weight[n]
             self.weight[n] = oldweight + (self.lr * inputs[n] * difference)
