@@ -54,9 +54,9 @@ class NeuralLayer:
     def backPropagation(self):
         for n in range(len(self.neuronList)):
             trueError = 0
-            for sigmoid in self.nextLayer.getNeuronList():
-                trueError += sigmoid.getDelta() * sigmoid.getWeights()[n]
-            self.neuronList[n].adjustDelta(error)
+            for sigm in self.nextLayer.getNeuronList():
+                trueError += sigm.getDelta() * sigm.getWeights()[n]
+            self.neuronList[n].adjustDelta(trueError)
         self.prevLayer.backPropagation()
 
     def updateWeights(self):

@@ -13,17 +13,20 @@ class NeuralNet:
         if self.firstLayer.isNull():
             self.firstLayer = layer
         else:
+            self.outputLayer.setNext(layer)
             layer.setPrev(self.outputLayer)
         self.layerList.append(layer)
         self.outputLayer = layer
 
     # Creates a new network by accepting a list which indicates
     # the number of neurons on each layer.
-    def newNetworkWithRandomWeights(self, neuronsPerLayer, numberOfInputs):
+    # neuronsPerLayer = list[]
+    # numberOfInputs = int
+    def newNetworkWithRandomWeights(self, neuronsPerLayerList, numberOfInputs):
         nOfInputs = numberOfInputs
-        for numberOfNeurons in neuronsPerLayer:
+        for numberOfNeurons in neuronsPerLayerList:
             newLayer = NeuralLayer()
-            newLayer.setXNeuronsWithYInputs(numberOfNeurons,nOfInputs)
+            newLayer.setXNeuronsWithYInputs(numberOfNeurons, nOfInputs)
             self.appendLayer(newLayer)
             nOfInputs = numberOfNeurons
 
@@ -42,7 +45,7 @@ class NeuralNet:
         actualOutputs = self.feedNetwork(inputList)
         error = []
         for n in range(len(actualOutputs)):
-            error.append(expectedOutput[n] - actualOutputs[n])
+            error.append(expectedOutputs[n] - actualOutputs[n])
         self.outputLayer.backPropagationOutLayer(error)
         self.firstLayer.updateWeights()
 
