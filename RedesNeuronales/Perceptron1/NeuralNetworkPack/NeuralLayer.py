@@ -60,7 +60,8 @@ class NeuralLayer:
         self.prevLayer.backPropagation()
 
     def updateWeights(self):
-        for sigmoid in self.neuronList:
-            sigmoid.updateNeuron()
+        for sigm in self.neuronList:
+            sigm.updateNeuron()
+        self.nextLayer.updateWeights()
 
 

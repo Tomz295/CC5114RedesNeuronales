@@ -25,8 +25,8 @@ class NetworkXORTraining:
     def feed(self, inputs):
         return self.network.feedNetwork(inputs)
 
-    def learningCurve(self, threshold = 0.4, TrainsPerPoint = 1000, XPoints = 100):
-        self.newNetwork([2, 2, 1])
+    def learningCurve(self, threshold = 0.3, TrainsPerPoint = 100, XPoints = 50):
+        self.newNetwork([2, 3, 1])
         plt.grid(True)
         Yaxis = []
         Xaxis = []
