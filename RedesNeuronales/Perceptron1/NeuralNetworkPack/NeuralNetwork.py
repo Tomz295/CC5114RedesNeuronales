@@ -37,6 +37,7 @@ class NeuralNet:
         self.outputLayer = NullLayer()
         self.layerList = []
 
+    # Entrega Inputs en forma de una lista a la red neuronal
     def feedNetwork(self, inputs):
         return self.firstLayer.feedLayer(inputs)
 
@@ -47,6 +48,7 @@ class NeuralNet:
         error = []
         for n in range(len(actualOutputs)):
             error.append(expectedOutputs[n] - actualOutputs[n])
+            #print (error)
         self.outputLayer.backPropagationOutLayer(error)
         self.firstLayer.updateWeights()
 

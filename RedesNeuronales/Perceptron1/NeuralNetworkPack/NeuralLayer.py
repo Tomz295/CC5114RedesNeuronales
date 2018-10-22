@@ -18,8 +18,8 @@ class NeuralLayer:
         for x in range(X):
             weights = []
             for y in range(Y):
-                weights.append(uniform(-5, 5))
-            neurons.append(sigmoid(weights,uniform(-5, 5)))
+                weights.append(uniform(-2, 2))
+            neurons.append(sigmoid(weights,uniform(-2, 2)))
         self.neuronList = neurons
 
     def setNeurons(self, neurons):
@@ -56,6 +56,7 @@ class NeuralLayer:
             trueError = 0
             for sigm in self.nextLayer.getNeuronList():
                 trueError += sigm.getDelta() * sigm.getWeights()[n]
+                #print([sigm.getDelta(), sigm.getWeights()[n], trueError])
             self.neuronList[n].adjustDelta(trueError)
         self.prevLayer.backPropagation()
 
