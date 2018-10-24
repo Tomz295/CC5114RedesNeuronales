@@ -4,7 +4,7 @@ import math
 
 class sigmoid(perceptron):
 
-    def __init__(self, weights, biass, learnRate = 0.1):
+    def __init__(self, weights, biass, learnRate = 0.4):
         super().__init__(weights, biass, learnRate)
         self.lastInputs = 0
         self.lastOutput = 0

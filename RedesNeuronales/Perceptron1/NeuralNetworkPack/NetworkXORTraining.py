@@ -14,12 +14,12 @@ class NetworkXORTraining:
         return [randint(0,1),randint(0,1)]
 
     def expectedOutputs(self, inputs):
-        return [inputs[0] and inputs[1]]
+        return [inputs[0] ^ inputs[1]]
 
     def trainNetwork(self, numberOfTrainings):
         for n in range(numberOfTrainings):
             Inputs = [[0, 0], [0, 1], [1, 0], [1, 1]]
-            expectedOut = [[0], [0], [0], [1]]
+            expectedOut = [[0], [1], [1], [0]]
             for i in range(4):
                 self.network.trainNetwork(Inputs[i], expectedOut[i])
 
@@ -27,7 +27,7 @@ class NetworkXORTraining:
         return self.network.feedNetwork(inputs)
 
     def learningCurve(self, threshold = 0.3, TrainsPerPoint = 100, XPoints = 50):
-        self.newNetwork([1])
+        self.newNetwork([2, 3, 1])
         plt.grid(True)
         Yaxis = []
         Xaxis = []
