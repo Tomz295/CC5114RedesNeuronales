@@ -22,12 +22,12 @@ class NeuralNet:
     # the number of neurons on each layer.
     # neuronsPerLayer = list[]
     # numberOfInputs = int
-    def newNetworkWithRandomWeights(self, neuronsPerLayerList, numberOfInputs):
+    def newNetworkWithRandomWeights(self, neuronsPerLayerList, numberOfInputs, learningRate = 0.4):
         self.clearLayers()
         nOfInputs = numberOfInputs
         for numberOfNeurons in neuronsPerLayerList:
             newLayer = NeuralLayer()
-            newLayer.setXNeuronsWithYInputs(numberOfNeurons, nOfInputs)
+            newLayer.setXNeuronsWithYInputs(numberOfNeurons, nOfInputs, learningRate)
             self.appendLayer(newLayer)
             nOfInputs = numberOfNeurons
 

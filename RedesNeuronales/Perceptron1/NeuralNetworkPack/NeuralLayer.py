@@ -13,13 +13,13 @@ class NeuralLayer:
         return False
 
     # Cambia la lista de neuronas para que tenga X neuronas con 5 entradas cada una
-    def setXNeuronsWithYInputs(self, X, Y):
+    def setXNeuronsWithYInputs(self, X, Y, learnRate=0.4):
         neurons = []
         for x in range(X):
             weights = []
             for y in range(Y):
                 weights.append(uniform(-2, 2))
-            neurons.append(sigmoid(weights,uniform(-2, 2)))
+            neurons.append(sigmoid(weights,uniform(-2, 2), learnRate))
         self.neuronList = neurons
 
     def setNeurons(self, neurons):

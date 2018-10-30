@@ -8,7 +8,6 @@ class NetworkXORTraining:
 
     def newNetwork(self, neuronsPerLayerList):
         self.network.newNetworkWithRandomWeights(neuronsPerLayerList, 2)
-        assert(neuronsPerLayerList[-1] == 1)
 
     def randomInputs(self):
         return [randint(0,1),randint(0,1)]
@@ -19,15 +18,15 @@ class NetworkXORTraining:
     def trainNetwork(self, numberOfTrainings):
         for n in range(numberOfTrainings):
             Inputs = [[0, 0], [0, 1], [1, 0], [1, 1]]
-            expectedOut = [[0], [1], [1], [0]]
+            expectedOut = [[1, 0], [1, 0], [1, 0], [0, 1]]
             for i in range(4):
                 self.network.trainNetwork(Inputs[i], expectedOut[i])
 
     def feed(self, inputs):
         return self.network.feedNetwork(inputs)
 
-    def learningCurve(self, threshold = 0.3, TrainsPerPoint = 100, XPoints = 50):
-        self.newNetwork([2, 3, 1])
+    def learningCurve(self, threshold = 0.2, TrainsPerPoint = 100, XPoints = 50):
+        self.newNetwork([2, 3, 2])
         plt.grid(True)
         Yaxis = []
         Xaxis = []
