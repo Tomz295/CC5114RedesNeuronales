@@ -4,7 +4,6 @@
     <list default="true" id="44bd1664-182e-47fb-89d8-ed89ab1d1289" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataSet/IsSkinDataSetCSV.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataSet/IsSkinDataSetCSV.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNetworkPack/NeuralNetwork.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkPack/NeuralNetwork.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +48,7 @@
     <session id="1571406990">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.100" value="1" />
           <entry key="project.open.time.119" value="1" />
@@ -68,37 +67,38 @@
           <entry key="project.open.time.68" value="1" />
           <entry key="project.open.time.69" value="1" />
           <entry key="project.open.time.70" value="1" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.open.time.71" value="1" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="26" />
+          <entry key="py" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="26" />
+          <entry key="Python" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="IsSkinDataSetCSV" value="151" />
+          <entry key="IsSkinDataSetCSV" value="503" />
           <entry key="NetworkXORTraining" value="951" />
           <entry key="PerceptGraphTraining" value="431" />
           <entry key="PerceptXORTraining" value="68" />
           <entry key="Python Console" value="195" />
           <entry key="SigmoidPerceptStyleTraining" value="23" />
           <entry key="WhineDataSetCSV" value="167" />
-          <entry key="dummy" value="91" />
-          <entry key="py" value="11490" />
-          <entry key="txt" value="215" />
+          <entry key="dummy" value="102" />
+          <entry key="py" value="11657" />
+          <entry key="txt" value="296" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="306" />
-          <entry key="Python" value="13476" />
+          <entry key="PLAIN_TEXT" value="398" />
+          <entry key="Python" value="13995" />
         </counts>
       </usages-collector>
     </session>
@@ -108,8 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sigmoid/SigmoidClass.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+            <state relative-caret-position="-26">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
                 <marker date="1540408833092" expanded="true" signature="90:91" ph="..." />
@@ -135,7 +135,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NeuralNetworkPack/NeuralNetwork.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
+            <state relative-caret-position="391">
               <caret line="24" column="97" selection-start-line="24" selection-start-column="97" selection-end-line="24" selection-end-column="97" />
               <folding>
                 <element signature="e#0#53#0" expanded="true" />
@@ -176,43 +176,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DataSet/IsSkinDataSetCSV.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="66" selection-start-line="66" selection-end-line="66" />
+            <state relative-caret-position="393">
+              <caret line="71" column="26" lean-forward="true" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
-                <marker date="1540942467061" expanded="true" signature="390:395" ph="..." />
-                <marker date="1540942467061" expanded="true" signature="414:423" ph="..." />
-                <marker date="1540942467061" expanded="true" signature="414:677" ph="..." />
-                <marker date="1540942467061" expanded="true" signature="1035:1040" ph="..." />
-                <marker date="1540942467061" expanded="true" signature="1400:1888" ph="..." />
+                <marker date="1541017696746" expanded="true" signature="390:395" ph="..." />
+                <marker date="1541017696746" expanded="true" signature="414:423" ph="..." />
+                <marker date="1541017696746" expanded="true" signature="414:677" ph="..." />
+                <marker date="1541017696746" expanded="true" signature="1044:1049" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/Python37/Lib/_bootlocale.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/Python37/Lib/csv.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="127" selection-start-line="127" selection-end-line="127" />
             </state>
           </provider>
         </entry>
@@ -258,6 +230,7 @@
         <option value="$PROJECT_DIR$/DataSet/WhineDataSetCSV.py" />
         <option value="$PROJECT_DIR$/NeuralNetworkPack/NetworkXORTraining.py" />
         <option value="$PROJECT_DIR$/NeuralNetworkPack/NeuralNetwork.py" />
+        <option value="$PROJECT_DIR$/DataSet/IsSkinDataSetCSV2.py" />
         <option value="$PROJECT_DIR$/DataSet/IsSkinDataSetCSV.py" />
       </list>
     </option>
@@ -539,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540866047549</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="clase 8?; learning&amp;Error Curve. aparente error al graficar">
+      <created>1540947234726</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1540947234726</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -560,14 +540,14 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32872504" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.30107528" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3824885" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3824885" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32872504" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.4623656" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="10" visible="true" weight="0.24423963" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -585,7 +565,8 @@
     <MESSAGE value="clase 5; neuralnetwork. Error al entrenar" />
     <MESSAGE value="clase 6; neuralnetwork" />
     <MESSAGE value="clase 8?; dataset color de piel" />
-    <option name="LAST_COMMIT_MESSAGE" value="clase 8?; dataset color de piel" />
+    <MESSAGE value="clase 8?; learning&amp;Error Curve. aparente error al graficar" />
+    <option name="LAST_COMMIT_MESSAGE" value="clase 8?; learning&amp;Error Curve. aparente error al graficar" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -617,17 +598,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/DataSet/IsSkinDataSetCSV.py</url>
-          <line>54</line>
+          <line>43</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/DataSet/IsSkinDataSetCSV.py</url>
-          <line>67</line>
+          <line>56</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/DataSet/IsSkinDataSetCSV.py</url>
-          <line>58</line>
+          <line>47</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
@@ -647,6 +628,9 @@
         <watch expression="randCoords[n]" />
         <watch expression="expectedOutput[n]" />
         <watch expression="diff " />
+        <watch expression="networkOutput" />
+        <watch expression="expectedOutput" />
+        <watch expression="inputs" />
       </configuration>
     </watches-manager>
   </component>
@@ -716,25 +700,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sigmoid/SigmoidClass.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-            <marker date="1540408833092" expanded="true" signature="90:91" ph="..." />
-            <marker date="1540408833092" expanded="true" signature="90:281" ph="..." />
-            <marker date="1540408833092" expanded="true" signature="90:285" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/NetworkTest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
           <folding>
             <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NeuralNetworkPack/NeuralNetwork.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="24" column="97" selection-start-line="24" selection-start-column="97" selection-end-line="24" selection-end-column="97" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+            <marker date="1540941947330" expanded="true" signature="156:161" ph="..." />
           </folding>
         </state>
       </provider>
@@ -763,31 +745,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python37/Lib/csv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="127" selection-start-line="127" selection-end-line="127" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NeuralNetworkPack/NeuralNetwork.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="24" column="97" selection-start-line="24" selection-start-column="97" selection-end-line="24" selection-end-column="97" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-            <marker date="1540941947330" expanded="true" signature="156:161" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python37/Lib/_bootlocale.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -795,17 +752,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataSet/IsSkinDataSetCSV.py">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataSet/IsSkinDataSetCSV2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
-            <marker date="1540942467061" expanded="true" signature="390:395" ph="..." />
-            <marker date="1540942467061" expanded="true" signature="414:423" ph="..." />
-            <marker date="1540942467061" expanded="true" signature="414:677" ph="..." />
-            <marker date="1540942467061" expanded="true" signature="1035:1040" ph="..." />
-            <marker date="1540942467061" expanded="true" signature="1400:1888" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python37/Lib/csv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sigmoid/SigmoidClass.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+            <marker date="1540408833092" expanded="true" signature="90:91" ph="..." />
+            <marker date="1540408833092" expanded="true" signature="90:281" ph="..." />
+            <marker date="1540408833092" expanded="true" signature="90:285" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataSet/IsSkinDataSetCSV.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="71" column="26" lean-forward="true" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1541017696746" expanded="true" signature="390:395" ph="..." />
+            <marker date="1541017696746" expanded="true" signature="414:423" ph="..." />
+            <marker date="1541017696746" expanded="true" signature="414:677" ph="..." />
+            <marker date="1541017696746" expanded="true" signature="1044:1049" ph="..." />
           </folding>
         </state>
       </provider>
