@@ -14,6 +14,7 @@ class SkinDataset:
         self.network.newNetworkWithRandomWeights([4, 1], 3, 0.4)
 
     def newNetwork(self, neronsPerLayerList, learningRate = 0.5):
+        assert (neronsPerLayerList[-1] == 1)
         self.network.newNetworkWithRandomWeights(neronsPerLayerList, 3, learningRate)
 
     def trainSingleEpoch(self):
@@ -26,6 +27,9 @@ class SkinDataset:
                 self.network.trainNetwork(inputs, outputs)
         endTime = time.time()
         print('Epoch Train duration: {0:0.4f} seconds'.format(endTime - startTime))
+
+    def feedNetwork(self, inputs):
+        self.network.feedNetwork(inputs)
 
     def trainNEpochs(self, num):
         for n in range(num):
