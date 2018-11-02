@@ -1,6 +1,7 @@
 import csv
 import matplotlib.pyplot as plt
 import random
+import time
 from NeuralNetworkPack.NeuralNetwork import NeuralNet
 
 
@@ -10,18 +11,21 @@ from NeuralNetworkPack.NeuralNetwork import NeuralNet
 class SkinDataset:
     def __init__(self):
         self.network = NeuralNet()
-        self.network.newNetworkWithRandomWeights([4, 1], 3)
+        self.network.newNetworkWithRandomWeights([4, 1], 3, 0.05)
 
-    def newNetwork(self, neronsPerLayerList, outputs, learningRate):
-        self.network.newNetworkWithRandomWeights(neronsPerLayerList, outputs, learningRate)
+    def newNetwork(self, neronsPerLayerList, numberOfInputs, learningRate = 0.5):
+        self.network.newNetworkWithRandomWeights(neronsPerLayerList, numberOfInputs, learningRate)
 
     def trainSingleEpoch(self):
+        startTime = time.time()
         with open('ShuffledSkinData - Train.csv', newline='') as csvfile:
             reader = csv.DictReader(csvfile)
             for line in reader:
                 inputs = [int(line['R'])/255, int(line['G'])/255, int(line['B'])/255]
                 outputs = [int(line['O'])]
                 self.network.trainNetwork(inputs, outputs)
+        endTime = time.time()
+        print('Epoch Train duration: {0:0.4f} seconds'.format(endTime - startTime))
 
     def trainNEpochs(self, num):
         for n in range(num):
@@ -35,7 +39,6 @@ class SkinDataset:
             return list(read)
 
     def learnAndErrorCurves(self, learnCurveThreshold = 0.1, EpochsPerPoint = 1, XPoints = 10):
-        plt.grid(True)
         print("Generating Curves")
         print("Progress%:")
         learnYaxis = []
@@ -61,13 +64,14 @@ class SkinDataset:
             # print del porcentaje del progreso
             print(str(100.0*(i+1)/(EpochsPerPoint*XPoints))+"%")
         plt.subplot(2,1,1)
+        plt.grid(True)
         plt.plot(Xaxis, learnYaxis, 'b')
         plt.title('Curva de aprendizaje')
         plt.subplot(2, 1, 2)
+        plt.grid(True)
         plt.plot(Xaxis, errorYaxis, 'r')
         plt.title('Curva de error')
 
 
 skin = SkinDataset()
 skin.learnAndErrorCurves()
-net = skin.network
