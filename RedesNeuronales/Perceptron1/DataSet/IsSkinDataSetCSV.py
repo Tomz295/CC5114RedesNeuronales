@@ -11,7 +11,7 @@ from NeuralNetworkPack.NeuralNetwork import NeuralNet
 class SkinDataset:
     def __init__(self):
         self.network = NeuralNet()
-        self.network.newNetworkWithRandomWeights([4, 1], 3, 0.05)
+        self.network.newNetworkWithRandomWeights([4, 1], 3, 0.4)
 
     def newNetwork(self, neronsPerLayerList, numberOfInputs, learningRate = 0.5):
         self.network.newNetworkWithRandomWeights(neronsPerLayerList, numberOfInputs, learningRate)
