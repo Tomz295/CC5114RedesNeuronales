@@ -13,8 +13,8 @@ class SkinDataset:
         self.network = NeuralNet()
         self.network.newNetworkWithRandomWeights([4, 1], 3, 0.4)
 
-    def newNetwork(self, neronsPerLayerList, numberOfInputs, learningRate = 0.5):
-        self.network.newNetworkWithRandomWeights(neronsPerLayerList, numberOfInputs, learningRate)
+    def newNetwork(self, neronsPerLayerList, learningRate = 0.5):
+        self.network.newNetworkWithRandomWeights(neronsPerLayerList, 3, learningRate)
 
     def trainSingleEpoch(self):
         startTime = time.time()
