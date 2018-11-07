@@ -67,13 +67,18 @@ class SkinDataset:
             self.trainNEpochs(EpochsPerPoint)
             # print del porcentaje del progreso
             print(str(100.0*(i+1)/(EpochsPerPoint*XPoints))+"%")
-        plt.subplot(2,1,1)
+        plt.subplot(2, 1, 1)
+        plt.subplots_adjust(None, None, None, None, None, 0.5)
         plt.grid(True)
         plt.plot(Xaxis, learnYaxis, 'b')
+        plt.ylabel('Presición')
+        plt.xlabel('Epocas')
         plt.title('Curva de aprendizaje')
         plt.subplot(2, 1, 2)
         plt.grid(True)
         plt.plot(Xaxis, errorYaxis, 'r')
+        plt.ylabel('Error')
+        plt.xlabel('Epocas')
         plt.title('Curva de error')
 
 
