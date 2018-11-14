@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44bd1664-182e-47fb-89d8-ed89ab1d1289" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/GeneticAlgorithm/BasicGeneticAlgorithm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeneticAlgorithm/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Perceptron11.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RedesNeuronales.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeneticAlgorithm/BasicWordGeneticAlgorithm.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeneticAlgorithm/BasicGeneticAlgorithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeneticAlgorithm/BasicGeneticAlgorithm.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +49,7 @@
     <session id="1571406990">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="22" />
+          <entry key="project.closed" value="23" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.100" value="1" />
           <entry key="project.open.time.119" value="1" />
@@ -65,6 +63,7 @@
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.41" value="1" />
+          <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.50" value="1" />
           <entry key="project.open.time.53" value="1" />
@@ -77,19 +76,19 @@
           <entry key="project.open.time.70" value="1" />
           <entry key="project.open.time.71" value="1" />
           <entry key="project.open.time.91" value="1" />
-          <entry key="project.opened" value="25" />
+          <entry key="project.opened" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="2" />
-          <entry key="py" value="32" />
+          <entry key="py" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="32" />
+          <entry key="Python" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -98,50 +97,47 @@
           <entry key="NetworkXORTraining" value="951" />
           <entry key="PerceptGraphTraining" value="431" />
           <entry key="PerceptXORTraining" value="68" />
-          <entry key="Python Console" value="335" />
+          <entry key="Python Console" value="402" />
           <entry key="SigmoidPerceptStyleTraining" value="23" />
           <entry key="WhineDataSetCSV" value="167" />
-          <entry key="dummy" value="102" />
-          <entry key="py" value="15301" />
-          <entry key="txt" value="322" />
+          <entry key="dummy" value="106" />
+          <entry key="py" value="16174" />
+          <entry key="txt" value="402" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="424" />
-          <entry key="Python" value="18355" />
+          <entry key="PLAIN_TEXT" value="508" />
+          <entry key="Python" value="19295" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GeneticAlgorithm/BasicGeneticAlgorithm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="93" column="13" lean-forward="true" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
+            <state relative-caret-position="157">
+              <caret line="105" column="1" selection-start-line="105" selection-start-column="1" selection-end-line="105" selection-end-column="1" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <marker date="1542153815944" expanded="true" signature="68:73" ph="..." />
-                <marker date="1542153815944" expanded="true" signature="2067:2629" ph="..." />
+                <marker date="1542228028533" expanded="true" signature="70:75" ph="..." />
+                <marker date="1542228028533" expanded="true" signature="400:442" ph="..." />
+                <marker date="1542228028533" expanded="true" signature="2253:3000" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataSet/IsSkinDataSetCSV.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GeneticAlgorithm/BasicWordGeneticAlgorithm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="28" column="82" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="82" />
+            <state relative-caret-position="137">
+              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
               <folding>
-                <element signature="e#0#10#0" expanded="true" />
-                <marker date="1541623812841" expanded="true" signature="402:407" ph="..." />
-                <marker date="1541623812841" expanded="true" signature="426:435" ph="..." />
-                <marker date="1541623812841" expanded="true" signature="426:730" ph="..." />
-                <marker date="1541623812841" expanded="true" signature="1278:1325" ph="..." />
-                <marker date="1541623812841" expanded="true" signature="1320:1325" ph="..." />
+                <element signature="e#0#75#0" expanded="true" />
+                <marker date="1542228056482" expanded="true" signature="156:161" ph="..." />
               </folding>
             </state>
           </provider>
@@ -161,6 +157,7 @@
     <findStrings>
       <find>print(</find>
       <find>print</find>
+      <find>populationSize</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -191,6 +188,7 @@
         <option value="$PROJECT_DIR$/Tests/NetworkTest.py" />
         <option value="$PROJECT_DIR$/DataSet/IsSkinDataSetCSV.py" />
         <option value="$PROJECT_DIR$/GeneticAlgorithm/BasicGeneticAlgorithm.py" />
+        <option value="$PROJECT_DIR$/GeneticAlgorithm/BasicWordGeneticAlgorithm.py" />
       </list>
     </option>
   </component>
@@ -208,7 +206,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -219,17 +216,18 @@
             <path>
               <item name="RedesNeuronales" type="b2602c69:ProjectViewProjectNode" />
               <item name="Perceptron1" type="462c0819:PsiDirectoryNode" />
-              <item name="DataSet" type="462c0819:PsiDirectoryNode" />
+              <item name="GeneticAlgorithm" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RedesNeuronales" type="b2602c69:ProjectViewProjectNode" />
               <item name="Perceptron1" type="462c0819:PsiDirectoryNode" />
-              <item name="GeneticAlgorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="Sigmoid" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -248,8 +246,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.BasicGeneticAlgorithm">
+  <component name="RunManager" selected="Python.BasicWordGeneticAlgorithm">
     <configuration name="BasicGeneticAlgorithm" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="RedesNeuronales" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GeneticAlgorithm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GeneticAlgorithm/BasicGeneticAlgorithm.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="BasicWordGeneticAlgorithm" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RedesNeuronales" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -261,7 +277,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GeneticAlgorithm/BasicGeneticAlgorithm.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GeneticAlgorithm/BasicWordGeneticAlgorithm.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -274,6 +290,9 @@
       <module name="RedesNeuronales" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DataSet" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -309,27 +328,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="WhineDataSetCSV" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="RedesNeuronales" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DataSet" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Equipo\Desktop\Python\RedesNeuronales\Perceptron1\DataSet\IsSkinDataSetCSV.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Unittests for Percept_Tests.MyTestCase" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="RedesNeuronales" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -346,18 +344,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.NetworkTest" />
-      <item itemvalue="Python.WhineDataSetCSV" />
       <item itemvalue="Python.IsSkinDataSetCSV" />
       <item itemvalue="Python tests.Unittests for Percept_Tests.MyTestCase" />
       <item itemvalue="Python.BasicGeneticAlgorithm" />
+      <item itemvalue="Python.BasicWordGeneticAlgorithm" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.BasicWordGeneticAlgorithm" />
+        <item itemvalue="Python.BasicGeneticAlgorithm" />
         <item itemvalue="Python.BasicGeneticAlgorithm" />
         <item itemvalue="Python.IsSkinDataSetCSV" />
         <item itemvalue="Python.NetworkTest" />
-        <item itemvalue="Python.IsSkinDataSetCSV" />
-        <item itemvalue="Python tests.Unittests for Percept_Tests.MyTestCase" />
       </list>
     </recent_temporary>
   </component>
@@ -498,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541624180208</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="plot labels">
+      <created>1542153827492</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1542153827492</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -521,7 +526,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32872504" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39784947" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5330261" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3824885" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -529,7 +534,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32872504" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50074404" side_tool="true" weight="0.3686636" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49925596" weight="0.2565284" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49925596" weight="0.3824885" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -570,7 +575,8 @@
     <MESSAGE value="clase 8?; learning&amp;Error Curve. Funcional" />
     <MESSAGE value="clase 9; learning&amp;Error Curve. Funcional" />
     <MESSAGE value="plot labels" />
-    <option name="LAST_COMMIT_MESSAGE" value="plot labels" />
+    <MESSAGE value="clase 1 Algoritmo Genetico; Algoritmo basico de secuencia de bits" />
+    <option name="LAST_COMMIT_MESSAGE" value="clase 1 Algoritmo Genetico; Algoritmo basico de secuencia de bits" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -722,13 +728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sigmoid/SigmoidClass.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/NetworkTest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -758,7 +757,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DataSet/IsSkinDataSetCSV.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
+        <state relative-caret-position="408">
           <caret line="28" column="82" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="82" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
@@ -773,12 +772,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GeneticAlgorithm/BasicGeneticAlgorithm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="93" column="13" lean-forward="true" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
+        <state relative-caret-position="157">
+          <caret line="105" column="1" selection-start-line="105" selection-start-column="1" selection-end-line="105" selection-end-column="1" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <marker date="1542153815944" expanded="true" signature="68:73" ph="..." />
-            <marker date="1542153815944" expanded="true" signature="2067:2629" ph="..." />
+            <marker date="1542228028533" expanded="true" signature="70:75" ph="..." />
+            <marker date="1542228028533" expanded="true" signature="400:442" ph="..." />
+            <marker date="1542228028533" expanded="true" signature="2253:3000" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sigmoid/SigmoidClass.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GeneticAlgorithm/BasicWordGeneticAlgorithm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#75#0" expanded="true" />
+            <marker date="1542228056482" expanded="true" signature="156:161" ph="..." />
           </folding>
         </state>
       </provider>
