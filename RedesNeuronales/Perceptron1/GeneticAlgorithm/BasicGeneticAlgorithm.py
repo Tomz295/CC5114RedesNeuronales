@@ -1,9 +1,9 @@
 import random
 import math
-import copy
+import matplotlib.pyplot as plt
 
 class BasicBitGeneticAlgorithm:
-    def __init__(self, mutationRate = 0.01):
+    def __init__(self, mutationRate = 0.01, fixSeed = False):
         self.population = []
         self.measuredPopulation = []
         self.fittestIndividuals = []
@@ -11,15 +11,18 @@ class BasicBitGeneticAlgorithm:
         self.generationFitnessAverage = 0
         self.generationFitnessBest = -1
         self.mutationRate = mutationRate
+        self.numberOfGenes = 0
+        if fixSeed:
+            random.seed(1337)
 
     def getGene(self):
         return random.randint(0, 1)
 
-    def newRandomPopulation(self, numOfGenes, populationSize):
+    def newRandomPopulation(self, populationSize):
         self.population = []
         for i in range(populationSize):
             individual = []
-            for n in range(numOfGenes):
+            for n in range(self.numberOfGenes):
                 individual.append(self.getGene())
             self.population.append(individual)
 
@@ -72,14 +75,18 @@ class BasicBitGeneticAlgorithm:
             self.population.append(offspring)
         self.fittestIndividuals = []
 
-    def startGeneticAlgorithm(self, populationSize = 10, correctAnswer = [1, 1, 1, 1, 1, 1, 1, 1, 1], nonImprovementLimit = 100):
+    def startGeneticAlgorithm(self, populationSize = 10, nonImprovementLimit = 100, correctAnswer = [1, 1, 1, 1, 1, 1, 1, 1, 1]):
         print("Initiating Algorithm")
-        numberOfGenes = len(correctAnswer)
-        self.newRandomPopulation(numberOfGenes, populationSize)
-        currentGeneration = 1
+        if not correctAnswer == []:
+            self.numberOfGenes = len(correctAnswer)
+        self.newRandomPopulation(populationSize)
+        currentGeneration = 0
         allTimeBestFitness = 0
         generationsWithoutImprovement = 0
-        while(generationsWithoutImprovement < nonImprovementLimit and allTimeBestFitness < numberOfGenes):
+        plotXaxis = []
+        plotYaxisBest = []
+        plotYaxisAverage = []
+        while(generationsWithoutImprovement < nonImprovementLimit and allTimeBestFitness < self.numberOfGenes):
             self.measureGenerationFitness(correctAnswer, populationSize)
             if self.generationFitnessBest > allTimeBestFitness:
                 allTimeBestFitness = self.generationFitnessBest
@@ -95,12 +102,30 @@ class BasicBitGeneticAlgorithm:
             print(self.generationBest)
             print("")
             self.generatePopulationOffspring()
+
+            plotXaxis.append(currentGeneration)
+            plotYaxisBest.append(self.generationFitnessBest)
+            plotYaxisAverage.append(self.generationFitnessAverage)
+
             currentGeneration += 1
         if generationsWithoutImprovement >= nonImprovementLimit:
             print("Limit of generations without improvement reached. The answer was not found")
         else:
             print("The answer has been reached by Generation {0}".format(currentGeneration-1))
-
+        plt.subplot(2, 1, 1)
+        plt.subplots_adjust(None, None, None, None, None, 0.5)
+        plt.grid(True)
+        plt.plot(plotXaxis, plotYaxisBest, 'b')
+        plt.ylabel('Fitness')
+        plt.xlabel('Generación')
+        plt.title('Mejor Fitness por generación')
+        plt.subplot(2, 1, 2)
+        plt.grid(True)
+        plt.plot(plotXaxis, plotYaxisAverage, 'r')
+        plt.ylabel('Eitness Promedio')
+        plt.xlabel('Generación')
+        plt.title('Fitness promedio por generación')
+        plt.show()
 
 #gen = BasicBitGeneticAlgorithm()
 #gen.startGeneticAlgorithm()
