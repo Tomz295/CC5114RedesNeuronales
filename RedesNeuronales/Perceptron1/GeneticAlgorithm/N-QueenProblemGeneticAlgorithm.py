@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 
 class NQueenAlgorithm(BasicBitGeneticAlgorithm):
-    def __init__(self, tableSize = 8, mutationRate = 0.1, fixSeed = False):
+    def __init__(self, tableSize = 4, mutationRate = 0.1, fixSeed = False):
         super().__init__(mutationRate, fixSeed)
         self.numberOfGenes = tableSize
 
@@ -31,9 +31,9 @@ class NQueenAlgorithm(BasicBitGeneticAlgorithm):
                 fitness -= 1
         return fitness
 
-    def startGeneticAlgorithm(self, populationSize = 20, nonImprovementLimit = 100):
+    def startGeneticAlgorithm(self, populationSize = 10, nonImprovementLimit = 100):
         super().startGeneticAlgorithm(populationSize, nonImprovementLimit, [])
 
 
-queen = NQueenAlgorithm()
-queen.startGeneticAlgorithm()
+queen = NQueenAlgorithm(8)
+queen.startGeneticAlgorithm(20)
