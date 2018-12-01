@@ -31,9 +31,9 @@ class NQueenAlgorithm(BasicBitGeneticAlgorithm):
                 fitness -= 1
         return fitness
 
-    def startGeneticAlgorithm(self, populationSize = 10, nonImprovementLimit = 100):
+    def startGeneticAlgorithm(self, populationSize = 8, nonImprovementLimit = 100):
         super().startGeneticAlgorithm(populationSize, nonImprovementLimit, [])
 
 
-queen = NQueenAlgorithm(8)
-queen.startGeneticAlgorithm(20)
+queen = NQueenAlgorithm()
+queen.startGeneticAlgorithm()
