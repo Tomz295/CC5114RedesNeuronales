@@ -14,7 +14,10 @@ class NQueenAlgorithm(BasicBitGeneticAlgorithm):
     def calcFitness(self, individual, correctAnswer = None):
         # fitness = self.numberOfGenes
         # fitness -= self.numberOfGenes - len(set(individual))
+        # choques horizontales:
         fitness = len(set(individual))
+        # choques en diagonales:
+        # (se implementa de esta manera para mantener consistencia respecto a la penalizacion de los choques horizontales)
         for index in range(self.numberOfGenes-1):
             geneValue = individual[index]
             choqueMas = False
