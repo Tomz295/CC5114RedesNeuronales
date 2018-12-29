@@ -47,7 +47,7 @@ class BasicBitGeneticAlgorithm:
 
     def measureGenerationFitness(self, correctAnswer, populationSize):
         self.measuredPopulation = []
-        self.generationFitnessBest = -1
+        self.generationFitnessBest = -float('inf')
         self.generationFitnessAverage = 0.0
         for individual in self.population:
             fitness = self.calcFitness(individual, correctAnswer)
