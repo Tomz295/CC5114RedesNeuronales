@@ -1,45 +1,54 @@
 from Tarea3.EquationNode import ENode
 from GeneticAlgorithm.BasicGeneticAlgorithm import BasicBitGeneticAlgorithm
+import random
+import math
+import matplotlib.pyplot as plt
+from copy import copy
+import statistics
+
 
 class FuncFindAlgorithm(BasicBitGeneticAlgorithm):
-    def __init__(self, lowestValue = 1, highestValue = 10, chanceOfX = 0.4, chanceOfNumber = 0.4,
-                 mutationRate = 0.1, testFromValue = -10, testToValue = 10, treeSize = 5, fixSeed = False):
+    def __init__(self, lowestValue = 0, highestValue = 10, chanceOfX = 0.8,
+                 mutationRate = 0.1, testFromValue = -20, testToValue = 20, treeSize = 3, fixSeed = False):
         super().__init__(mutationRate, fixSeed)
         self.low = lowestValue
         self.high = highestValue
         self.xchance = chanceOfX
-        self.numchance = chanceOfNumber
-        self.testrange = list(range(testFromValue, testToValue + 1))
+        self.testrange = list(range(testFromValue, testToValue + 1, int((testToValue-testFromValue)/20)))
         self.size = treeSize
 
     def newRandomPopulation(self, populationSize):
         self.population = []
         for i in range(populationSize):
             individual = ENode(self.low, self.high, self.xchance)
-            individual.buildTree(self.numchance, self.size)
+            individual.buildTree(self.size)
             self.population.append(individual)
 
     def calcFitness(self, individual, correctAnswer):
         fitness = 0
+        anslist = []
         for i in range(len(correctAnswer)):
-            fitness -= abs(correctAnswer[i] - individual.calcValue(self.testrange[i]))
+            value = individual.calcValue(self.testrange[i])
+            correct = correctAnswer[i]
+            absolute = abs(correct - value)
+            fitness -= absolute
         return fitness
 
     def generatePopulationOffspring(self):
         self.population = []
-        for n in range(int(len(self.fittestIndividuals)/2)):
-            parent1 = self.fittestIndividuals[2*n]
-            parent2 = self.fittestIndividuals[(2*n)+1]
-            #randIndex = random.randint(0, numberOfGenes)
-            #offspring = []
-            #offspring[0:randIndex] = parent1[0:randIndex]
-            #offspring[randIndex:numberOfGenes] = parent2[randIndex:numberOfGenes]
-            parent1.right = parent2.right
-            parent1.mutate(self.mutationRate)
-            self.population.append(parent1)
+        for n in range(int(len(self.fittestIndividuals))):
+            parent1 = copy(self.fittestIndividuals[n])
+            #parent1 = copy(self.fittestIndividuals[2*n])
+            #parent2 = copy(self.fittestIndividuals[(2*n)+1])
+            offspring = parent1
+            #splicedepth = random.randint(0, self.size-1)
+            #node = parent2.getRandomDepthNode(splicedepth)
+            #offspring.getRandomDepthNode(splicedepth).cloneNode(node)
+            offspring.mutate(self.mutationRate)
+            self.population.append(offspring)
         self.fittestIndividuals = []
 
-    def startGeneticAlgorithm(self, functionToFindInString, populationSize = 10, nonImprovementLimit = 100):
+    def startGeneticAlgorithm(self, functionToFindInString, fitnessThreshold = 0, populationSize = 100, nonImprovementLimit = 100):
         AnswerValues = []
         for val in self.testrange:
             x = val
@@ -48,12 +57,12 @@ class FuncFindAlgorithm(BasicBitGeneticAlgorithm):
         print("Initiating Algorithm")
         self.newRandomPopulation(populationSize)
         currentGeneration = 0
-        allTimeBestFitness = 0
+        allTimeBestFitness = -float('inf')
         generationsWithoutImprovement = 0
         plotXaxis = []
         plotYaxisBest = []
         plotYaxisAverage = []
-        while(generationsWithoutImprovement < nonImprovementLimit and allTimeBestFitness < self.numberOfGenes):
+        while(generationsWithoutImprovement < nonImprovementLimit and allTimeBestFitness < -fitnessThreshold):
             self.measureGenerationFitness(AnswerValues, populationSize)
             if self.generationFitnessBest > allTimeBestFitness:
                 allTimeBestFitness = self.generationFitnessBest
@@ -63,12 +72,14 @@ class FuncFindAlgorithm(BasicBitGeneticAlgorithm):
             print("Generation's top Fitness score: {0}".format(self.generationFitnessBest))
             print("Generation's average Fitness: {0}".format(self.generationFitnessAverage))
             print("")
-            for i in range(populationSize*2):
+            for i in range(populationSize*1):
                 self.tournamentFitness(math.floor(populationSize*3/4))
             print("Generation's top:")
-            print(self.generationBest)
+            print(self.generationBest.toString())
             print("")
-            self.generatePopulationOffspring()
+
+            if allTimeBestFitness < -fitnessThreshold:
+                self.generatePopulationOffspring()
 
             plotXaxis.append(currentGeneration)
             plotYaxisBest.append(self.generationFitnessBest)
@@ -79,17 +90,31 @@ class FuncFindAlgorithm(BasicBitGeneticAlgorithm):
             print("Limit of generations without improvement reached. The answer was not found")
         else:
             print("The answer has been reached by Generation {0}".format(currentGeneration-1))
-        plt.subplot(2, 1, 1)
+        plt.subplot(3, 1, 1)
         plt.subplots_adjust(None, None, None, None, None, 0.5)
         plt.grid(True)
         plt.plot(plotXaxis, plotYaxisBest, 'b')
         plt.ylabel('Fitness')
         plt.xlabel('Generación')
         plt.title('Mejor Fitness por generación')
-        plt.subplot(2, 1, 2)
+        plt.subplot(3, 1, 2)
         plt.grid(True)
         plt.plot(plotXaxis, plotYaxisAverage, 'r')
         plt.ylabel('Eitness Promedio')
         plt.xlabel('Generación')
         plt.title('Fitness promedio por generación')
+        plt.subplot(3, 1, 3)
+        bestValues = []
+        for val in self.testrange:
+            result = self.generationBest.calcValue(val)
+            bestValues.append(result)
+        plt.grid(True)
+        plt.plot(self.testrange, AnswerValues, 'b*')
+        plt.plot(self.testrange, bestValues, 'r')
+        plt.ylabel('f(x)')
+        plt.xlabel('x')
+        plt.title('Aproximacion vs funcion real')
         plt.show()
+
+#e = FuncFindAlgorithm()
+#e.startGeneticAlgorithm('19+x*3')

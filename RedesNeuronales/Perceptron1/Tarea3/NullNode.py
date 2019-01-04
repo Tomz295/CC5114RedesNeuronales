@@ -4,6 +4,9 @@ class NullNode:
     def __init__(self):
         pass
 
+    def isNull(self):
+        return True
+
     def calcValue(self, x):
         return ''
 
