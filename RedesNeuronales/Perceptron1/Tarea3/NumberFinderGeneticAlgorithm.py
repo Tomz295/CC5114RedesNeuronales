@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import math
 
 class NumFindAlgorithm(FuncFindAlgorithm):
-    def __init__(self, numbers = (2,5,10,23), mutationRate = 0.1, treeSize = 3, fixSeed = False):
+    def __init__(self, numbers = (10,1,5,17,23), mutationRate = 0.1, treeSize = 4, fixSeed = False):
         super().__init__(0, 10, -1, mutationRate, -10, 10, treeSize, fixSeed)
         self.nums = numbers
 
@@ -70,5 +70,5 @@ class NumFindAlgorithm(FuncFindAlgorithm):
         plt.title('Fitness promedio por generación')
         plt.show()
 
-e = NumFindAlgorithm()
-e.startGeneticAlgorithm(2)
+#e = NumFindAlgorithm()
+#e.startGeneticAlgorithm(29)

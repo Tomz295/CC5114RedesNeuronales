@@ -36,14 +36,14 @@ class FuncFindAlgorithm(BasicBitGeneticAlgorithm):
 
     def generatePopulationOffspring(self):
         self.population = []
-        for n in range(int(len(self.fittestIndividuals))):
-            parent1 = copy(self.fittestIndividuals[n])
-            #parent1 = copy(self.fittestIndividuals[2*n])
-            #parent2 = copy(self.fittestIndividuals[(2*n)+1])
+        for n in range(int(len(self.fittestIndividuals)/2)):
+            #parent1 = copy(self.fittestIndividuals[n])
+            parent1 = copy(self.fittestIndividuals[2*n])
+            parent2 = copy(self.fittestIndividuals[(2*n)+1])
             offspring = parent1
-            #splicedepth = random.randint(0, self.size-1)
-            #node = parent2.getRandomDepthNode(splicedepth)
-            #offspring.getRandomDepthNode(splicedepth).cloneNode(node)
+            splicedepth = random.randint(0, self.size-1)
+            node = parent2.getRandomDepthNode(splicedepth)
+            offspring.getRandomDepthNode(splicedepth).cloneNode(node)
             offspring.mutate(self.mutationRate)
             self.population.append(offspring)
         self.fittestIndividuals = []
@@ -72,7 +72,7 @@ class FuncFindAlgorithm(BasicBitGeneticAlgorithm):
             print("Generation's top Fitness score: {0}".format(self.generationFitnessBest))
             print("Generation's average Fitness: {0}".format(self.generationFitnessAverage))
             print("")
-            for i in range(populationSize*1):
+            for i in range(populationSize*2):
                 self.tournamentFitness(math.floor(populationSize*3/4))
             print("Generation's top:")
             print(self.generationBest.toString())
